@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SILab2Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-08T23:49:52" hostname="LENOVOY520" time="0.025">
-  <properties/>
-  <testcase name="EveryBranchTest()" classname="SILab2Test" time="0.025"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
