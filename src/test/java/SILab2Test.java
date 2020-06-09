@@ -63,10 +63,14 @@ public class SILab2Test {
         ex = assertThrows(RuntimeException.class, () -> labs.function(user , list));
         assertTrue(ex.getMessage().contains("User already exists!"));
 
-        // 1, 2, 4, 6, 7, 20 - username in list
+        // 1, 2, 4, 5, 20 - username in list
         user = new User("user1", "pass", "email@email.com");
         ex = assertThrows(RuntimeException.class, () -> labs.function(user, list));
         assertTrue(ex.getMessage().contains("User already exists!"));
+        
+        // 1, 2, 4, 6, 7, 20 - email = null
+        user = new User("user4", "pass", null);
+        assertEquals(false, labs.function(user, list));
 
         // 1, 2, 4, 6, 8, 9.1, 9.2, 14, 15, 16, 20 - not possible, email != null
 
